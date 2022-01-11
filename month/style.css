@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(img/bg-01.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.year h1{
+    text-align: center;
+    color: white;
+
+}
+.cantainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.calender{
+    background-color: rgba(140, 255, 249, 0.233);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    overflow: hidden;
+    padding:10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;  
+}
+nav h3{
+    text-align: center;
+    margin-top: 0;
+}
+nav a{
+    color: black;
+}
+nav a:hover{
+    color: white;
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in;
+}
+.calender-date{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    
+}
+.date, .day{
+    text-align: center;
+    padding: 2px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.day{
+    padding:10px 5px;
+    background-color: rgba(70, 70, 70, 0.322);
+    backdrop-filter: blur(5px);
+}
+.date{
+    background-color: rgba(255, 255, 255, 0.486);
+    backdrop-filter: blur(5px);
+}
+.other-date{
+    background-color: rgba(255, 255, 255, 0.185);
+}
+.date:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in;
+}
+
+
+@media only screen and (max-width: 800px){
+    body{
+        background-image: url(img/bg-01-mv.jpg);
+    }
+}
